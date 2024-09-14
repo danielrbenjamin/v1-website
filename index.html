@@ -5,27 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Benjamin - UBC Student</title>
     <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 0 20px;
         }
 
         header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+
+        header h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        nav {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        section {
-            margin-bottom: 30px;
+        nav a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
 
-        h1, h2 {
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
             color: #3498db;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            padding-bottom: 5px;
         }
 
         p {
-            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         ul {
@@ -37,17 +83,24 @@
             margin-bottom: 10px;
         }
 
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 10px;
-            border-top: 1px solid #ccc;
+        a {
+            color: #3498db;
         }
 
         .pdf-container {
             width: 100%;
             height: 600px;
             border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -58,26 +111,33 @@
         <h2>UBC Student</h2>
     </header>
 
-    <section>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Daniel Benjamin, a student at the University of British Columbia (UBC). I am really passionate about engineering, particularly about advancements in the fields of automotive, aerospace, and prostheses engineering. This website is a platform to share more about myself and my academic journey.</p>
+        <p>Hello! I'm Daniel Benjamin, a student at the University of British Columbia (UBC). I am passionate about engineering, particularly advancements in automotive, aerospace, and prostheses engineering. This website is a platform to share more about myself and my academic journey.</p>
     </section>
 
-    <section>
+    <section id="education">
         <h2>Education</h2>
         <ul>
             <li><strong>University of British Columbia (UBC)</strong> - Bachelor of Applied Science (BASc)</li>
         </ul>
     </section>
 
-    <section>
+    <section id="resume">
         <h2>Resume</h2>
-        <iframe src="assets/Daniel%20Benjamin%20-%20resume.pdf" class="pdf-container">
-            Your browser does not support PDFs. Please <a href="assets/Daniel%20Benjamin%20-%20resume.pdf" target="_blank">download the PDF</a> to view it.
+        <iframe src="assets/resume.pdf" class="pdf-container">
+            Your browser does not support PDFs. Please <a href="assets/resume.pdf" target="_blank">download the PDF</a> to view it.
         </iframe>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact Information</h2>
         <ul>
             <li>Email: <a href="mailto:danielrbenjamin@outlook.com">danielrbenjamin@outlook.com</a></li>
