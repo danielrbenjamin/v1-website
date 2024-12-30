@@ -1,1 +1,1 @@
-Version 1 of Website
+First iteration of my portfolio website in pure HTML.
